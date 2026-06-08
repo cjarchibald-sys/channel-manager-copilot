@@ -217,8 +217,9 @@ export default function Home() {
               <text x="26" y="33" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="33" fill="rgba(255,255,255,0.35)" letterSpacing="-1">clarix</text>
             </svg>
             <p className="text-xs text-white/50 text-center">
-              Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Product Demo
-              &nbsp;·&nbsp; © 2026 Clarix. All rights reserved.
+              Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team
+              &nbsp;·&nbsp; Not for distribution without written approval
+              &nbsp;·&nbsp; © 2026 Chris Archibald. Shared for evaluation purposes only. All rights reserved.
             </p>
           </div>
         </div>

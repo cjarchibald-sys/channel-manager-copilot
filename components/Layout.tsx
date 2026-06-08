@@ -37,8 +37,9 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center gap-2">
           <ClarixLogo dim />
           <p className="text-xs text-white/50 text-center">
-            Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Product Demo
-            &nbsp;·&nbsp; © 2026 Clarix. All rights reserved.
+            Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team
+            &nbsp;·&nbsp; Not for distribution without written approval
+            &nbsp;·&nbsp; © 2026 Chris Archibald. Shared for evaluation purposes only. All rights reserved.
           </p>
         </div>
       </footer>
