@@ -151,6 +151,17 @@ export default function Home() {
         </div>
       </div>
 
+      {/* White-label callout */}
+      <div className="px-4 sm:px-6 py-4" style={{ background: "#F0EFFE", borderBottom: "1px solid #C7D2FE" }}>
+        <div className="max-w-6xl mx-auto flex items-start sm:items-center gap-3">
+          <span className="text-lg flex-shrink-0 mt-0.5 sm:mt-0">🎨</span>
+          <p className="text-sm text-indigo-900 leading-relaxed">
+            <span className="font-semibold">This is a white-label demo.</span>{" "}
+            When deployed for your organization, everything — brand, product names, partner program tiers, agent examples, and output templates — is fully customized to match how your channel team actually works.
+          </p>
+        </div>
+      </div>
+
       {/* Agents grid */}
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
         <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">Choose an agent</p>
