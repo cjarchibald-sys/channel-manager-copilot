@@ -210,13 +210,13 @@ export default function Home() {
 
         {/* Footer */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center gap-2 sm:justify-between">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center gap-2">
             <svg width="60" height="18" viewBox="0 0 160 44" fill="none" aria-label="Clarix">
               <rect width="7" height="44" rx="2" fill="rgba(99,102,241,0.35)" />
               <rect x="11" width="7" height="44" rx="2" fill="rgba(99,102,241,0.2)" />
               <text x="26" y="33" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="33" fill="rgba(255,255,255,0.35)" letterSpacing="-1">clarix</text>
             </svg>
-            <p className="text-xs text-white/50 text-center sm:text-right">
+            <p className="text-xs text-white/50 text-center">
               Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Product Demo
               &nbsp;·&nbsp; © 2026 Clarix. All rights reserved.
             </p>

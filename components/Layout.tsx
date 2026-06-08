@@ -34,9 +34,9 @@ export default function Layout({ children }: { children: ReactNode }) {
       </main>
 
       <footer style={{ borderTop: "1px solid #E5E3DF", background: "#0F172A" }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center gap-2 sm:justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center gap-2">
           <ClarixLogo dim />
-          <p className="text-xs text-white/50 text-center sm:text-right">
+          <p className="text-xs text-white/50 text-center">
             Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Product Demo
             &nbsp;·&nbsp; © 2026 Clarix. All rights reserved.
           </p>
