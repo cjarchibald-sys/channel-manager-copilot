@@ -23,7 +23,7 @@ export default function AgentCard({ agent, onStart }: AgentCardProps) {
         boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 16px rgba(0,0,0,0.1), -3px 0 0 #FF6900";
+        (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 16px rgba(0,0,0,0.1), -3px 0 0 #6366F1";
         (e.currentTarget as HTMLDivElement).style.borderColor = "#D4D0CB";
       }}
       onMouseLeave={e => {
@@ -33,7 +33,7 @@ export default function AgentCard({ agent, onStart }: AgentCardProps) {
     >
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 w-11 h-11 rounded-lg flex items-center justify-center text-xl"
-          style={{ background: "rgba(255,105,0,0.08)", border: "1px solid rgba(255,105,0,0.15)" }}>
+          style={{ background: "rgba(99,102,241,0.08)", border: "1px solid rgba(99,102,241,0.15)" }}>
           {agent.icon}
         </div>
         <div>
@@ -43,15 +43,15 @@ export default function AgentCard({ agent, onStart }: AgentCardProps) {
       </div>
 
       <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-100">
-        <span className="text-xs font-medium" style={{ color: "#FF6900" }}>
+        <span className="text-xs font-medium" style={{ color: "#6366F1" }}>
           ⏱ Saves ~{formatTime(agent.estimatedMinutes)}
         </span>
         <button
           onClick={() => onStart(agent.id)}
           className="text-sm font-semibold px-5 py-2 rounded-lg text-white transition-all duration-150"
-          style={{ background: "#FF6900" }}
+          style={{ background: "#6366F1" }}
           onMouseEnter={e => (e.currentTarget.style.background = "#E55A00")}
-          onMouseLeave={e => (e.currentTarget.style.background = "#FF6900")}
+          onMouseLeave={e => (e.currentTarget.style.background = "#6366F1")}
         >
           Start →
         </button>

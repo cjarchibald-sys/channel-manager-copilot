@@ -29,6 +29,16 @@ const howItWorks = [
   { step: "03", title: "Get a polished output", body: "Receive a copy-ready document in seconds. Refine it, send it, or paste it anywhere." },
 ];
 
+function ClarixLogo() {
+  return (
+    <svg width="72" height="20" viewBox="0 0 160 44" fill="none" aria-label="Clarix">
+      <rect width="7" height="44" rx="2" fill="rgba(99,102,241,1)" />
+      <rect x="11" width="7" height="44" rx="2" fill="rgba(99,102,241,0.5)" />
+      <text x="26" y="33" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="33" fill="rgba(255,255,255,1)" letterSpacing="-1">clarix</text>
+    </svg>
+  );
+}
+
 export default function Home() {
   const [screen, setScreen] = useState<Screen>("home");
   const [activeAgentId, setActiveAgentId] = useState<string | null>(null);
@@ -75,18 +85,16 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "#F7F6F4" }}>
       {/* Header */}
-      <header style={{ background: "#2D2828", borderBottom: "3px solid #FF6900" }}>
+      <header style={{ background: "#0F172A", borderBottom: "3px solid #6366F1" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <svg width="56" height="26" viewBox="0 0 180 80" fill="none" aria-label="8x8">
-              <text x="0" y="68" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="80" fill="#FFFFFF" letterSpacing="-2">8x8</text>
-            </svg>
+            <ClarixLogo />
             <div className="h-5 w-px bg-white/20 hidden sm:block" />
-            <span className="text-sm font-semibold text-white/80 tracking-wide hidden sm:block">Partner Manager Copilot</span>
+            <span className="text-sm font-semibold text-white/80 tracking-wide hidden sm:block">Channel Manager Copilot</span>
           </a>
           <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-            style={{ background: "rgba(255,105,0,0.15)", color: "#FF6900", border: "1px solid rgba(255,105,0,0.3)" }}>
-            Internal Use Only
+            style={{ background: "rgba(99,102,241,0.15)", color: "#818CF8", border: "1px solid rgba(99,102,241,0.3)" }}>
+            Demo
           </span>
         </div>
       </header>
@@ -96,20 +104,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
-              style={{ background: "rgba(255,105,0,0.15)", color: "#FF6900", border: "1px solid rgba(255,105,0,0.25)" }}>
-              ✦ Purpose-built for 8x8's Partner & Channel Team
+              style={{ background: "rgba(99,102,241,0.15)", color: "#818CF8", border: "1px solid rgba(99,102,241,0.25)" }}>
+              ✦ Purpose-built for partner &amp; channel teams
             </div>
             <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">
               What are you trying<br />
-              to get <span style={{ color: "#FF6900" }}>done today?</span>
+              to get <span style={{ color: "#818CF8" }}>done today?</span>
             </h1>
             <p className="text-base sm:text-lg text-white/60 max-w-xl leading-relaxed">
               AI assistants that turn raw notes, pipeline data, and partner context into polished, ready-to-use outputs — in minutes, not hours.
             </p>
-            <p className="text-sm font-semibold mt-4 max-w-xl" style={{ color: "#FF6900" }}>
+            <p className="text-sm font-semibold mt-4 max-w-xl" style={{ color: "#818CF8" }}>
               You're the Agent Boss. These AI agents work for you — so you can spend your time on the conversations, relationships, and decisions that actually drive revenue.
             </p>
-
           </div>
 
           {/* Stat bar */}
@@ -118,7 +125,7 @@ export default function Home() {
               <div key={s.label} className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg"
                 style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}>
                 <span className="text-xs text-white/50">{s.label}</span>
-                <span className="text-xs font-bold" style={{ color: "#FF6900" }}>{s.value}</span>
+                <span className="text-xs font-bold" style={{ color: "#818CF8" }}>{s.value}</span>
               </div>
             ))}
           </div>
@@ -133,7 +140,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {howItWorks.map((item) => (
               <div key={item.step} className="flex gap-4">
-                <div className="text-2xl font-black flex-shrink-0" style={{ color: "#FF6900", opacity: 0.4 }}>{item.step}</div>
+                <div className="text-2xl font-black flex-shrink-0" style={{ color: "#6366F1", opacity: 0.4 }}>{item.step}</div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-sm mb-1">{item.title}</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">{item.body}</p>
@@ -155,11 +162,11 @@ export default function Home() {
       </main>
 
       {/* Vision section */}
-      <div style={{ background: "#2D2828", borderTop: "3px solid #FF6900" }}>
+      <div style={{ background: "#0F172A", borderTop: "3px solid #6366F1" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#FF6900" }}>This is v1. What comes next.</p>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#818CF8" }}>This is v1. What comes next.</p>
               <h2 className="text-2xl font-black text-white leading-tight mb-4">
                 The roadmap for an AI-powered channel team.
               </h2>
@@ -167,16 +174,16 @@ export default function Home() {
                 This tool demonstrates what's possible when AI is wired directly into the workflows the channel team runs every day. The infrastructure is in place. Here's where it goes next.
               </p>
               <p className="text-white/70 text-sm leading-relaxed mt-4 border-t pt-4" style={{ borderColor: "rgba(255,255,255,0.12)" }}>
-                <span className="font-semibold text-white/90">Note:</span> outputs in this prototype are built on structured templates and illustrative data. In production, every output would be generated by live AI and populated with real pipeline data, partner context, and 8x8-specific proof points — making each one genuinely personalized and field-ready.
+                <span className="font-semibold text-white/90">Note:</span> outputs in this prototype are built on structured templates and illustrative data. In production, every output would be generated by live AI and populated with real pipeline data, partner context, and product-specific proof points — making each one genuinely personalized and field-ready.
               </p>
             </div>
             <div className="space-y-4">
               {[
-                { icon: "⚡", title: "Real-time AI generation", body: "Replace placeholder outputs with live GPT-4o generation tailored to 8x8's products and partner program." },
-                { icon: "🔗", title: "Salesforce & Partner Portal integration", body: "Pull live pipeline data, partner tier status, and deal history directly into every agent — no copy/paste." },
+                { icon: "⚡", title: "Real-time AI generation", body: "Replace placeholder outputs with live AI generation tailored to your products and partner program." },
+                { icon: "🔗", title: "CRM & Partner Portal integration", body: "Pull live pipeline data, partner tier status, and deal history directly into every agent — no copy/paste." },
                 { icon: "📊", title: "Partner performance dashboard", body: "Track time saved, outputs generated, and partner engagement across the entire channel team." },
-                { icon: "📬", title: "8x8 Work, Slack & Teams delivery", body: "Push outputs directly into 8x8 Work — and Slack or Teams for partners — so QBR prep and follow-ups land where your team already works." },
-                { icon: "📄", title: "One-click export", body: "When AI-enabled, outputs will export directly to Word, PDF, PowerPoint, Google Docs, or Slides — and agent-specific formats like slide decks, scorecards, and tables will be available as generation options." },
+                { icon: "📬", title: "Slack & Teams delivery", body: "Push outputs directly into Slack or Teams so QBR prep and follow-ups land where your team already works." },
+                { icon: "📄", title: "One-click export", body: "When AI-enabled, outputs will export directly to Word, PDF, PowerPoint, Google Docs, or Slides — with agent-specific formats like slide decks, scorecards, and tables available as generation options." },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 p-4 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}>
                   <span className="text-xl flex-shrink-0">{item.icon}</span>
@@ -193,12 +200,14 @@ export default function Home() {
         {/* Footer */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center gap-2 sm:justify-between">
-            <svg width="44" height="20" viewBox="0 0 180 80" fill="none" aria-label="8x8">
-              <text x="0" y="68" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="80" fill="rgba(255,255,255,0.3)" letterSpacing="-2">8x8</text>
+            <svg width="60" height="18" viewBox="0 0 160 44" fill="none" aria-label="Clarix">
+              <rect width="7" height="44" rx="2" fill="rgba(99,102,241,0.35)" />
+              <rect x="11" width="7" height="44" rx="2" fill="rgba(99,102,241,0.2)" />
+              <text x="26" y="33" fontFamily="'Arial Black', 'Arial', sans-serif" fontWeight="900" fontSize="33" fill="rgba(255,255,255,0.35)" letterSpacing="-1">clarix</text>
             </svg>
             <p className="text-xs text-white/50 text-center sm:text-right">
-              8x8 Internal Use Only &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Not for distribution outside 8x8
-              &nbsp;·&nbsp; © 2026 Chris Archibald. Shared for evaluation purposes only. All rights reserved.
+              Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team &nbsp;·&nbsp; Product Demo
+              &nbsp;·&nbsp; © 2026 Clarix. All rights reserved.
             </p>
           </div>
         </div>

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "8x8 Partner Manager Copilot",
-  description: "Internal AI assistants for 8x8 partner and channel managers.",
+  title: "Clarix Channel Manager Copilot",
+  description: "AI assistants for channel and partner managers — purpose-built for modern partner teams.",
   icons: {
     icon: "/favicon.svg",
   },

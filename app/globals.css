@@ -3,8 +3,8 @@
 :root {
   --background: #F7F6F4;
   --foreground: #1A1A1A;
-  --orange: #FF6900;
-  --charcoal: #2D2828;
+  --orange: #6366F1;
+  --charcoal: #0F172A;
 }
 
 @theme inline {
@@ -30,7 +30,7 @@ input, textarea, select {
 }
 
 .hero-pattern {
-  background-color: #2D2828;
+  background-color: #0F172A;
   background-image: radial-gradient(circle at 1px 1px, rgba(255, 105, 0, 0.12) 1px, transparent 0);
   background-size: 28px 28px;
 }
@@ -42,7 +42,7 @@ input, textarea, select {
 
 .streaming-cursor::after {
   content: '▍';
-  color: #FF6900;
+  color: #6366F1;
   animation: blink 0.7s step-end infinite;
   margin-left: 2px;
 }

@@ -15,7 +15,7 @@ function Field({ field, value, onChange }: {
   onChange: (val: string) => void;
 }) {
   const base = "w-full border border-gray-200 rounded-lg px-3 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 bg-white transition-all";
-  const focusStyle = { "--tw-ring-color": "rgba(255,105,0,0.3)" } as React.CSSProperties;
+  const focusStyle = { "--tw-ring-color": "rgba(99,102,241,0.3)" } as React.CSSProperties;
 
   if (field.type === "textarea") {
     return (
@@ -104,10 +104,10 @@ export default function AgentForm({ agent, onSubmit, onBack }: AgentFormProps) {
 
       {/* Agent header */}
       <div className="rounded-xl p-4 sm:p-5 mb-5 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
-        style={{ background: "#2D2828" }}>
+        style={{ background: "#0F172A" }}>
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-lg flex items-center justify-center text-2xl flex-shrink-0"
-            style={{ background: "rgba(255,105,0,0.15)", border: "1px solid rgba(255,105,0,0.3)" }}>
+            style={{ background: "rgba(99,102,241,0.15)", border: "1px solid rgba(99,102,241,0.3)" }}>
             {agent.icon}
           </div>
           <div>
@@ -119,19 +119,19 @@ export default function AgentForm({ agent, onSubmit, onBack }: AgentFormProps) {
           type="button"
           onClick={loadExample}
           className="shrink-0 text-sm font-semibold px-4 py-2.5 rounded-lg text-white transition-all w-full sm:w-auto"
-          style={{ background: "#FF6900" }}
+          style={{ background: "#6366F1" }}
           onMouseEnter={e => (e.currentTarget.style.background = "#E55A00")}
-          onMouseLeave={e => (e.currentTarget.style.background = "#FF6900")}
+          onMouseLeave={e => (e.currentTarget.style.background = "#6366F1")}
         >
           Load Example
         </button>
       </div>
 
       {/* Prototype note */}
-      <div className="rounded-lg px-4 py-3 mb-5 flex items-start gap-3" style={{ background: "rgba(255,105,0,0.06)", border: "1px solid rgba(255,105,0,0.2)" }}>
-        <span className="text-sm mt-0.5" style={{ color: "#FF6900" }}>ℹ</span>
+      <div className="rounded-lg px-4 py-3 mb-5 flex items-start gap-3" style={{ background: "rgba(99,102,241,0.06)", border: "1px solid rgba(99,102,241,0.2)" }}>
+        <span className="text-sm mt-0.5" style={{ color: "#6366F1" }}>ℹ</span>
         <p className="text-xs leading-relaxed" style={{ color: "#6B5B4E" }}>
-          <span className="font-semibold">Prototype note:</span> fields are filled in manually here. When AI-enabled and connected to Salesforce and the 8x8 Partner Portal, data fields — pipeline, account details, partner tier, deal history — will populate automatically. Fields requiring human input, such as meeting notes, observations, and strategic context, will always be entered by the channel manager.
+          <span className="font-semibold">Prototype note:</span> fields are filled in manually here. When AI-enabled and connected to Salesforce and the Clarix Partner Portal, data fields — pipeline, account details, partner tier, deal history — will populate automatically. Fields requiring human input, such as meeting notes, observations, and strategic context, will always be entered by the channel manager.
         </p>
       </div>
 
@@ -156,9 +156,9 @@ export default function AgentForm({ agent, onSubmit, onBack }: AgentFormProps) {
               type="submit"
               disabled={!hasRequired}
               className="w-full font-bold py-4 rounded-lg text-white text-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-              style={{ background: hasRequired ? "#FF6900" : undefined }}
+              style={{ background: hasRequired ? "#6366F1" : undefined }}
               onMouseEnter={e => { if (hasRequired) (e.currentTarget as HTMLButtonElement).style.background = "#E55A00"; }}
-              onMouseLeave={e => { if (hasRequired) (e.currentTarget as HTMLButtonElement).style.background = "#FF6900"; }}
+              onMouseLeave={e => { if (hasRequired) (e.currentTarget as HTMLButtonElement).style.background = "#6366F1"; }}
             >
               Generate Output →
             </button>

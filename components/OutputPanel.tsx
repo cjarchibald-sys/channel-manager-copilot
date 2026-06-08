@@ -21,9 +21,9 @@ interface OutputPanelProps {
 function renderMarkdown(text: string): string {
   return text
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/^### (.+)$/gm, '<h3 class="text-sm font-bold text-gray-900 mt-5 mb-1.5 uppercase tracking-wide" style="color:#2D2828">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="text-lg font-bold mt-6 mb-2" style="color:#2D2828">$1</h2>')
-    .replace(/^# (.+)$/gm, '<h1 class="text-xl font-bold mt-6 mb-2" style="color:#2D2828">$1</h1>')
+    .replace(/^### (.+)$/gm, '<h3 class="text-sm font-bold text-gray-900 mt-5 mb-1.5 uppercase tracking-wide" style="color:#0F172A">$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 class="text-lg font-bold mt-6 mb-2" style="color:#0F172A">$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1 class="text-xl font-bold mt-6 mb-2" style="color:#0F172A">$1</h1>')
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
     .replace(/^---$/gm, '<hr style="border:none;border-top:1px solid #E8E6E3;margin:16px 0" />')
     .replace(/^\| (.+) \|$/gm, (_, row) => {
@@ -31,8 +31,8 @@ function renderMarkdown(text: string): string {
       return `<tr>${cells.map((c: string) => `<td style="padding:8px 12px;font-size:13px;border:1px solid #E8E6E3;color:#374151">${c.trim()}</td>`).join("")}</tr>`;
     })
     .replace(/^\|[-| ]+\|$/gm, '')
-    .replace(/^[-•] \[ \] (.+)$/gm, '<li style="display:flex;gap:8px;font-size:13px;color:#374151;margin-bottom:6px"><span style="margin-top:1px;color:#FF6900">☐</span><span>$1</span></li>')
-    .replace(/^[-•] (.+)$/gm, '<li style="font-size:13px;color:#374151;margin-bottom:5px;padding-left:16px;position:relative"><span style="position:absolute;left:0;color:#FF6900">›</span>$1</li>')
+    .replace(/^[-•] \[ \] (.+)$/gm, '<li style="display:flex;gap:8px;font-size:13px;color:#374151;margin-bottom:6px"><span style="margin-top:1px;color:#6366F1">☐</span><span>$1</span></li>')
+    .replace(/^[-•] (.+)$/gm, '<li style="font-size:13px;color:#374151;margin-bottom:5px;padding-left:16px;position:relative"><span style="position:absolute;left:0;color:#6366F1">›</span>$1</li>')
     .replace(/^\d+\. (.+)$/gm, '<li style="font-size:13px;color:#374151;margin-bottom:5px;padding-left:4px;list-style:decimal;list-style-position:inside">$1</li>')
     .replace(/^(<strong\b.+|[^<\n].+)$/gm, '<p style="font-size:13px;color:#374151;margin-bottom:8px;line-height:1.65">$1</p>')
     .replace(/\n\n/g, '\n');
@@ -97,7 +97,7 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
 
   function sendAsEmail() {
     const textToSend = (distributionOutput || output).trim();
-    const subject = encodeURIComponent(`8x8 — ${agent.name} Output`);
+    const subject = encodeURIComponent(`Clarix — ${agent.name} Output`);
     const body = encodeURIComponent(textToSend.replace(/#{1,3} /g, '').replace(/\*\*/g, '').replace(/---/g, '---'));
     window.open(`mailto:?subject=${subject}&body=${body}`);
   }
@@ -106,7 +106,7 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
     <div className="max-w-3xl mx-auto fade-in-up">
       {/* Header */}
       <div className="rounded-xl px-4 sm:px-5 py-4 mb-4 flex items-center justify-between"
-        style={{ background: "#2D2828" }}>
+        style={{ background: "#0F172A" }}>
         <div className="flex items-center gap-3">
           <span className="text-2xl">{agent.icon}</span>
           <div>
@@ -125,7 +125,7 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
       {/* Time saved + modifier buttons */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold"
-          style={{ background: "rgba(255,105,0,0.1)", color: "#FF6900", border: "1px solid rgba(255,105,0,0.2)" }}>
+          style={{ background: "rgba(99,102,241,0.1)", color: "#6366F1", border: "1px solid rgba(99,102,241,0.2)" }}>
           ⏱ Saves ~{formatTime(agent.estimatedMinutes)}
         </div>
 
@@ -149,11 +149,11 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
         {/* Document top bar */}
         <div className="px-4 sm:px-6 py-3 flex items-center justify-between" style={{ background: "#F7F6F4", borderBottom: "1px solid #E8E6E3" }}>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full" style={{ background: "#FF6900" }} />
-            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">8x8 Partner Manager Copilot — Output</span>
+            <div className="w-2 h-2 rounded-full" style={{ background: "#6366F1" }} />
+            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Clarix Channel Manager Copilot — Output</span>
           </div>
           {streaming && (
-            <span className="text-xs font-medium" style={{ color: "#FF6900" }}>● Generating...</span>
+            <span className="text-xs font-medium" style={{ color: "#6366F1" }}>● Generating...</span>
           )}
         </div>
 
@@ -161,7 +161,7 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
         <div className="px-4 sm:px-7 py-5 sm:py-6 min-h-64 overflow-x-auto">
           {loading ? (
             <div className="flex flex-col items-center justify-center h-48 gap-3">
-              <div className="w-8 h-8 rounded-full border-2 border-t-transparent animate-spin" style={{ borderColor: "#FF6900", borderTopColor: "transparent" }} />
+              <div className="w-8 h-8 rounded-full border-2 border-t-transparent animate-spin" style={{ borderColor: "#6366F1", borderTopColor: "transparent" }} />
               <p className="text-sm text-gray-400">Regenerating output...</p>
             </div>
           ) : (
@@ -208,9 +208,9 @@ export default function OutputPanel({ agent, formData, initialOutput, onStartOve
           onClick={copyOutput}
           disabled={streaming}
           className="flex items-center justify-center gap-2 text-sm font-bold px-5 py-3 rounded-lg text-white transition-all disabled:opacity-40"
-          style={{ background: copied ? "#16a34a" : "#FF6900" }}
+          style={{ background: copied ? "#16a34a" : "#6366F1" }}
           onMouseEnter={e => { if (!copied) (e.currentTarget as HTMLButtonElement).style.background = "#E55A00"; }}
-          onMouseLeave={e => { if (!copied) (e.currentTarget as HTMLButtonElement).style.background = "#FF6900"; }}
+          onMouseLeave={e => { if (!copied) (e.currentTarget as HTMLButtonElement).style.background = "#6366F1"; }}
         >
           {copied ? "✓ Copied to Clipboard" : "Copy Output"}
         </button>
