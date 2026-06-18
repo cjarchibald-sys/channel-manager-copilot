@@ -191,7 +191,7 @@ Recommended actions:
 
 ### Marketing & Demand Generation Ideas
 - Joint webinar targeting ${segment} — lead with business outcomes: "Better customer experiences. Simpler operations. One platform."
-- Co-branded Avaya/Cisco Webex Calling displacement campaign — help customers modernize both employee communications and the contact center in a single motion
+- Co-branded Arova/Orbex Cloud Calling displacement campaign — help customers modernize both employee communications and the contact center in a single motion
 - Clarix Engage demo event for customer-facing teams — especially high-impact in financial services, healthcare, and retail
 - Field event or lunch-and-learn in ${partner}'s key markets
 - Case study development once first deal closes — document the business outcomes delivered, not just the products sold
@@ -361,7 +361,7 @@ Organizations in ${industry} are typically focused on:
 ---
 
 ### Potential Pain Points
-- Legacy on-prem systems (Avaya, Cisco Webex, Mitel) approaching end-of-life with no clear path forward
+- Legacy on-prem systems (Arova, Orbex, Stratel) approaching end-of-life with no clear path forward
 - Disconnected employee and customer communications creating fragmented experiences and operational gaps
 - Compliance exposure in call recording, quality management, and reporting
 - Contact center agents using outdated tools — long handle times, low customer satisfaction scores
@@ -550,7 +550,7 @@ ${messages}
 Clarix gives your customers a connected experience from the front line to the back office — **Clarix Unite** for every employee, **Clarix CX** for every agent, and **Clarix Engage** for AI-powered customer interactions. The result: faster service, simpler operations, and a communications foundation that makes AI outcomes possible. One platform, one SLA, backed by Clarix's 99.999% uptime guarantee.
 
 **On Clarix AI Studio:**
-"One more thing your customers can't get from Avaya or most of our competitors — Clarix AI Studio. It's a no-code platform that lets you build custom AI-powered communication workflows for your customers: intelligent virtual agents, automated call flows, AI-assisted interactions. You don't need a development team to build it. And once you build one, you can replicate it across your customer base. That's a services revenue stream that doesn't exist in anyone else's partner program at this level."
+"One more thing your customers can't get from Arova or most of our competitors — Clarix AI Studio. It's a no-code platform that lets you build custom AI-powered communication workflows for your customers: intelligent virtual agents, automated call flows, AI-assisted interactions. You don't need a development team to build it. And once you build one, you can replicate it across your customer base. That's a services revenue stream that doesn't exist in anyone else's partner program at this level."
 
 **Proof Point:**
 Clarix customers in regulated industries have simplified their vendor environment and improved customer satisfaction scores within 18 months of deployment. We have customer stories ready to share.
@@ -709,9 +709,9 @@ function generateCompetitive(data: Record<string, string>, modifier: Modifier): 
 | 5 | Reframe evaluation criteria to emphasize platform integration and customer experience outcomes | Partner SE + Clarix SE | Before next customer call |`;
   }
 
-  const isGenesys = competitor === "Genesys";
-  const isRingCentral = competitor.includes("RingCX") || competitor.includes("RingEX");
-  const isCCaaSOnly = ["Genesys", "Five9", "NICE CXone"].includes(competitor);
+  const isVeridia = competitor === "Veridia";
+  const isNexova = competitor.includes("NexoCX") || competitor.includes("NexoUC");
+  const isCCaaSOnly = ["Veridia", "Apexus", "PeakCX"].includes(competitor);
 
   return `## Competitive Intelligence — Clarix vs. ${competitor}
 **Account:** ${account}
@@ -735,23 +735,23 @@ ${ourPosition}
 
 ### Clarix Differentiators vs. ${competitor}
 
-${isGenesys ? `**The strategic reframe — one platform vs. best-in-class contact center:**
-Genesys built its reputation in the contact center. Clarix is built to connect the entire business — employees, agents, and customer-facing teams — on a single communications and customer engagement platform. This is not a feature comparison. It's a different question: does the customer want the most sophisticated contact center on the planet, or do they want to modernize communications across the business and improve customer experience without creating another stack to manage?
+${isVeridia ? `**The strategic reframe — one platform vs. best-in-class contact center:**
+Veridia built its reputation in the contact center. Clarix is built to connect the entire business — employees, agents, and customer-facing teams — on a single communications and customer engagement platform. This is not a feature comparison. It's a different question: does the customer want the most sophisticated contact center on the planet, or do they want to modernize communications across the business and improve customer experience without creating another stack to manage?
 
 For mid-market and enterprise customers who are managing separate UC and CC platforms today, Clarix's answer changes the economics. One admin model. One user identity. One reporting layer. One vendor relationship. One SLA.
 
 **"Why run two clouds?"**
-Most organizations evaluating Genesys are still buying UC from one vendor and contact center from another — with separate analytics, separate administration, and separate AI on top. Genesys solves the contact center half. Clarix solves the whole equation. That becomes especially compelling when contact center agents need to collaborate with back-office employees, when sales and service teams need shared customer context, and when IT leadership has been asked to reduce vendor complexity.
+Most organizations evaluating Veridia are still buying UC from one vendor and contact center from another — with separate analytics, separate administration, and separate AI on top. Veridia solves the contact center half. Clarix solves the whole equation. That becomes especially compelling when contact center agents need to collaborate with back-office employees, when sales and service teams need shared customer context, and when IT leadership has been asked to reduce vendor complexity.
 
-**The Microsoft Teams angle:**
-For customers already invested in Microsoft 365 and Teams, Clarix has a strong native integration story — keeping Teams for collaboration while adding enterprise voice, contact center, and customer engagement through Clarix. This is core Clarix differentiation. Genesys supports Teams but it is not central to their strategy.
+**The Vertex Teams angle:**
+For customers already invested in Vertex 365 and Teams, Clarix has a strong native integration story — keeping Teams for collaboration while adding enterprise voice, contact center, and customer engagement through Clarix. This is core Clarix differentiation. Veridia supports Teams but it is not central to their strategy.
 
 **Where to concede — and why it actually helps:**
-If the customer wants the most complex enterprise contact center with advanced routing orchestration and large-scale digital journey design, Genesys is a legitimate choice. Saying that is credible and disarming. Then immediately ask: how many of those advanced features will agents actually use on day one? How many admins will manage the environment? Is reducing vendor count a priority for the CIO? If the answers point toward simplicity, adoption, and speed — that's the Clarix conversation.` :
-isRingCentral ? `**Integrated platform — one vendor for employee communications and customer engagement:**
+If the customer wants the most complex enterprise contact center with advanced routing orchestration and large-scale digital journey design, Veridia is a legitimate choice. Saying that is credible and disarming. Then immediately ask: how many of those advanced features will agents actually use on day one? How many admins will manage the environment? Is reducing vendor count a priority for the CIO? If the answers point toward simplicity, adoption, and speed — that's the Clarix conversation.` :
+isNexova ? `**Integrated platform — one vendor for employee communications and customer engagement:**
 Clarix brings together Clarix Unite for employee communications, Clarix CX for agent and customer experiences, and Clarix Engage for AI-powered customer interactions — all on a single platform with one admin console, one SLA, and one support relationship.
 
-RingCentral requires two separate products — **RingEX** for employee communications and **RingCX** for the contact center. These are not the same platform. They carry separate contracts, separate support relationships, and a stitched-together integration that RingCentral markets as seamless but that puts the customer in the middle when something breaks. For a regulated industry customer, two platforms means two compliance postures, two sets of SLAs, and two points of failure.` :
+Nexova requires two separate products — **NexoUC** for employee communications and **NexoCX** for the contact center. These are not the same platform. They carry separate contracts, separate support relationships, and a stitched-together integration that Nexova markets as seamless but that puts the customer in the middle when something breaks. For a regulated industry customer, two platforms means two compliance postures, two sets of SLAs, and two points of failure.` :
 isCCaaSOnly ? `**Complete platform vs. contact center point solution:**
 ${competitor} is a contact center platform. It does not provide employee communications. A customer who buys ${competitor} still needs a separate UC solution — which means two vendors, two contracts, two support relationships, and data that never connects. Clarix brings employee communications and customer engagement together on one platform, eliminating that complexity entirely.` :
 `**Integrated platform — employee communications and customer engagement in one place:**
@@ -775,11 +775,11 @@ Deal registration, MDF, dedicated SE overlay, and a tiered margin structure that
 **Objection:** ${objection}
 
 **Response framework:**
-${isGenesys ?
-`1. Validate the concern — Genesys is a legitimate, respected platform. Don't be defensive about it.
+${isVeridia ?
+`1. Validate the concern — Veridia is a legitimate, respected platform. Don't be defensive about it.
 2. Reframe the question: "The real question isn't which contact center is more sophisticated. It's whether the goal is to build the world's most advanced contact center, or to modernize communications across the business and improve customer experience without adding more complexity. Those are different decisions."
 3. Redirect to the economic buyer: The CIO or CFO cares about vendor consolidation, TCO, and operational simplicity. The contact center lead cares about features. Make sure you're having the right conversation with the right person.
-4. Offer proof: Request a reference call with an Clarix customer who chose Clarix over Genesys — specifically one who had the same simplification mandate.` :
+4. Offer proof: Request a reference call with an Clarix customer who chose Clarix over Veridia — specifically one who had the same simplification mandate.` :
 `1. Validate the concern — don't be defensive
 2. Reframe the risk: "The real risk isn't vendor size — it's platform fragmentation. If employee communications and the contact center are on different platforms, who's accountable when the customer experience breaks? With Clarix, there's one answer to that question."
 3. Offer proof: Request a customer reference call with an Clarix win in the same industry
@@ -788,9 +788,9 @@ ${isGenesys ?
 ---
 
 ### Recommended Win Moves
-- Get Clarix executive engagement with the economic buyer — ${isGenesys ? "the CIO or CFO, not just the contact center lead" : "before the RFP closes"}
+- Get Clarix executive engagement with the economic buyer — ${isVeridia ? "the CIO or CFO, not just the contact center lead" : "before the RFP closes"}
 - Request competitive deal desk support — pricing flexibility may be available for strategic wins
-- ${isGenesys ? "Reframe the evaluation criteria around vendor consolidation, TCO, and operational simplicity — not just contact center feature depth" : "Push for an evaluation framework that includes platform integration risk and total cost of ownership"}
+- ${isVeridia ? "Reframe the evaluation criteria around vendor consolidation, TCO, and operational simplicity — not just contact center feature depth" : "Push for an evaluation framework that includes platform integration risk and total cost of ownership"}
 - Use the Clarix reference customer program — a peer conversation in the same industry is more powerful than any positioning document`;
 }
 
