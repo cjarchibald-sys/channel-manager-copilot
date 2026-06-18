@@ -104,17 +104,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
-              style={{ background: "rgba(99,102,241,0.1)", color: "#4338CA", border: "1px solid rgba(99,102,241,0.25)" }}>
+              style={{ background: "rgba(99,102,241,0.2)", color: "#C4B5FD", border: "1px solid rgba(99,102,241,0.35)" }}>
               ✦ Purpose-built for partner &amp; channel teams
             </div>
-            <h1 className="text-3xl sm:text-4xl font-black leading-tight mb-4" style={{ color: "#111827" }}>
+            <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-4">
               What are you trying<br />
-              to get <span style={{ color: "#4338CA" }}>done today?</span>
+              to get <span style={{ color: "#C4B5FD" }}>done today?</span>
             </h1>
-            <p className="text-base sm:text-lg max-w-xl leading-relaxed" style={{ color: "#374151" }}>
+            <p className="text-base sm:text-lg max-w-xl leading-relaxed" style={{ color: "rgba(255,255,255,0.88)" }}>
               AI assistants that turn raw notes, pipeline data, and partner context into polished, ready-to-use outputs — in minutes, not hours.
             </p>
-            <p className="text-sm font-semibold mt-4 max-w-xl" style={{ color: "#4338CA" }}>
+            <p className="text-sm font-semibold mt-4 max-w-xl" style={{ color: "#C4B5FD" }}>
               You're the Agent Boss. These AI agents work for you — so you can spend your time on the conversations, relationships, and decisions that actually drive revenue.
             </p>
           </div>
@@ -123,9 +123,9 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-2 sm:gap-3">
             {stats.map((s) => (
               <div key={s.label} className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg"
-                style={{ background: "#FFFFFF", border: "1px solid #C4B5FD" }}>
-                <span className="text-xs" style={{ color: "#6B7280" }}>{s.label}</span>
-                <span className="text-xs font-bold" style={{ color: "#4338CA" }}>{s.value}</span>
+                style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)" }}>
+                <span className="text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>{s.label}</span>
+                <span className="text-xs font-bold" style={{ color: "#C4B5FD" }}>{s.value}</span>
               </div>
             ))}
           </div>
