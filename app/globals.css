@@ -30,9 +30,10 @@ input, textarea, select {
 }
 
 .hero-pattern {
-  background-color: #0F172A;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255, 105, 0, 0.12) 1px, transparent 0);
+  background-color: #F5F3FF;
+  background-image: radial-gradient(circle at 1px 1px, rgba(99, 102, 241, 0.15) 1px, transparent 0);
   background-size: 28px 28px;
+  border-bottom: 1px solid #DDD6FE;
 }
 
 @keyframes blink {

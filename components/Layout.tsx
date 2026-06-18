@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <ClarixLogo />
             <div className="h-5 w-px bg-white/20 hidden sm:block" />
-            <span className="text-sm font-semibold text-white/80 tracking-wide hidden sm:block">Channel Manager Copilot</span>
+            <span className="text-sm font-semibold text-white tracking-wide hidden sm:block">Channel Manager Copilot</span>
           </a>
           <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
             style={{ background: "rgba(99,102,241,0.15)", color: "#818CF8", border: "1px solid rgba(99,102,241,0.3)" }}>
@@ -36,7 +36,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <footer style={{ borderTop: "1px solid #E5E3DF", background: "#0F172A" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center gap-2">
           <ClarixLogo dim />
-          <p className="text-xs text-white/50 text-center">
+          <p className="text-xs text-center" style={{ color: "rgba(255,255,255,0.65)" }}>
             Clarix Channel Manager Copilot &nbsp;·&nbsp; Partner &amp; Channel Team
             &nbsp;·&nbsp; Not for distribution without written approval
             &nbsp;·&nbsp; © 2026 Chris Archibald. Shared for evaluation purposes only. All rights reserved.
