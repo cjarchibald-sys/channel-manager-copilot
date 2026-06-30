@@ -24,7 +24,7 @@ export const agents: Agent[] = [
   {
     id: "qbr",
     name: "Partner QBR Agent",
-    description: "Prepare for a partner quarterly business review — wins, pipeline, risks, and talking points.",
+    description: "Walk into every QBR fully prepared — wins, pipeline, risks, and talking points ready in minutes, not an afternoon of prep.",
     icon: "📊",
     estimatedMinutes: 150,
     fields: [
@@ -52,7 +52,7 @@ export const agents: Agent[] = [
   {
     id: "bizplan",
     name: "Partner Business Plan Agent",
-    description: "Build a structured Clarix joint business plan with a partner — goals, segments, enablement, and 30/60/90.",
+    description: "Build a complete joint business plan in minutes. Enter what you know about the partner, get a structured plan with goals, segments, and a 30/60/90 you'd actually send.",
     icon: "📋",
     estimatedMinutes: 165,
     fields: [
@@ -77,7 +77,7 @@ export const agents: Agent[] = [
   {
     id: "followup",
     name: "Partner Meeting Follow-Up Agent",
-    description: "Turn raw meeting notes into a polished Clarix partner follow-up with action items and next steps.",
+    description: "Turn raw meeting notes into a polished follow-up email — decisions, action items, and next steps — before you're back at your desk.",
     icon: "✉️",
     estimatedMinutes: 60,
     fields: [
@@ -102,7 +102,7 @@ export const agents: Agent[] = [
   {
     id: "research",
     name: "Account Research Agent",
-    description: "Build a sharp account briefing before an Clarix customer or partner call.",
+    description: "Never walk into a partner or customer meeting unprepared. Get a sharp account briefing in minutes so you know exactly what to say and ask.",
     icon: "🔍",
     estimatedMinutes: 90,
     fields: [
@@ -125,7 +125,7 @@ export const agents: Agent[] = [
   {
     id: "pipeline",
     name: "Partner Pipeline Review Agent",
-    description: "Review an Clarix partner's pipeline, flag at-risk deals, and identify where to focus.",
+    description: "See exactly where your partner's pipeline stands, which deals need attention, and where to focus — before the conversation, not during it.",
     icon: "📈",
     estimatedMinutes: 90,
     fields: [
@@ -148,7 +148,7 @@ export const agents: Agent[] = [
   {
     id: "enablement",
     name: "Enablement Content Agent",
-    description: "Draft Clarix partner-facing enablement assets — talk tracks, one-pagers, training outlines, and FAQs.",
+    description: "Create partner-facing enablement assets — talk tracks, one-pagers, FAQs, training outlines — without the all-afternoon writing session.",
     icon: "🎓",
     estimatedMinutes: 120,
     fields: [
@@ -171,7 +171,7 @@ export const agents: Agent[] = [
   {
     id: "execupdate",
     name: "Executive Update Agent",
-    description: "Turn scattered notes into a clean executive summary for Clarix channel leadership.",
+    description: "Transform scattered notes and data into a clean executive brief your channel leadership will actually read — and that makes you look prepared.",
     icon: "📝",
     estimatedMinutes: 60,
     fields: [
@@ -196,7 +196,7 @@ export const agents: Agent[] = [
   {
     id: "competitive",
     name: "Competitive Intelligence Agent",
-    description: "Prep for deals where Nexova, Zync, Vertex Teams Phone, Orbex Cloud Calling, Veridia, Apexus, or PeakCX is in the mix.",
+    description: "Know exactly how to position against any competitor before the call. Get a sharp competitive brief with displacement strategy and win moves — in minutes.",
     icon: "⚔️",
     estimatedMinutes: 90,
     fields: [
@@ -219,7 +219,7 @@ export const agents: Agent[] = [
   {
     id: "recruitment",
     name: "New Partner Recruitment Agent",
-    description: "Craft a compelling outreach to recruit a prospective new partner into the Clarix Pinnacle Partner Program.",
+    description: "Turn a cold prospect into a warm conversation. Get a recruitment pitch tailored to what a specific partner actually cares about — so your first outreach lands.",
     icon: "🤝",
     estimatedMinutes: 75,
     fields: [
